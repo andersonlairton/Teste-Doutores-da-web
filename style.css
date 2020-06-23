@@ -1,0 +1,149 @@
+.container {
+  background-color: white;
+  color: gray;
+  width: 894px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-bottom: 0;
+  margin-right: auto;
+  position: relative;
+}
+
+.cabecalho {
+  background-color: rgb(7, 7, 83);
+  color: white;
+  text-align: right;
+  margin-top: 0;
+  margin-left: auto;
+  margin-bottom: 0;
+  margin-right: auto;
+}
+
+.logo {
+  background-color: rgb(7, 7, 83);
+  color: white;
+  float: left;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 50px;
+}
+
+.menu {
+  list-style: none;
+  float: right;
+  position: relative;
+  margin-bottom: 10px;
+  z-index: 9999;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul ul {
+  display: none;
+}
+
+.menu ul ul ul {
+  margin-left: 90px;
+  top: 0px;
+  position: absolute;
+}
+
+.menu ul li {
+  height: 40px;
+  width: 100px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  position: relative;
+}
+.menu ul li:hover > ul {
+  display: block;
+}
+
+.menu li ul {
+  position: absolute;
+  left: 0;
+  color: white;
+  background-color: rgb(7, 7, 83);
+  display: none;
+}
+
+#menuR ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+#menuR li a {
+  color: white;
+  text-decoration: none;
+}
+
+#menu li ul li {
+  display: block;
+  position: relative;
+  width: 150px;
+}
+
+.imagem {
+  width: 325px;
+  height: 212px;
+  position: relative;
+  background-color: rgb(7, 7, 83);
+  float: right;
+}
+
+.conteudo {
+  width: 569px;
+  height: 212px;
+  float: left;
+}
+
+.box {
+  position: relative;
+  height: 163px;
+  width: 196px;
+  margin-left: 15px;
+  display: inline-block;
+  text-align: center;
+  word-wrap: break-word;
+  
+}
+.box a{
+    color:gray;
+}
+
+.box img {
+  width: 196px;
+  height: 100%;
+}
+
+footer {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  height: 150px;
+}
+
+@media (max-width: 900px) {
+  .cabecalho,
+  .menu,
+  .container,
+  .logo,
+  .conteudo,
+  .imagem,
+  .boxDestaque,
+  .boxImagens,
+  .box,
+  .nivoSlider {
+    width: 100%;
+  }
+  .box {
+    position: relative;
+    margin-left: unset;
+  }
+}
